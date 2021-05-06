@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form name="publish">
+        <div class="form-group">
+            <input name="message" class="form-control form-control-lg" type="text" placeholder="Текст вопроса">
+        </div>
+        <button type="submit" value="Отправить" class="btn btn-primary">Отправить</button>
+    </form>
+
+    <section id="forMessages"></section>
+
+    <script src="static/js/websocket.js"></script>
+{% endblock %}
